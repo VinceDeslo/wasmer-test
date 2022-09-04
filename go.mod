@@ -1,4 +1,4 @@
-module github.com/VinceDeslo/wasm_test
+module github.com/VinceDeslo/wasmer_test
 
 go 1.19
 
