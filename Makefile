@@ -1,14 +1,13 @@
 wasm-compile:
-	cd webassembly/scripts && ./compile.sh
+	@cd webassembly/scripts && ./compile.sh
 
-wasm-serve:
-	cd webassembly/scripts && ./run_browser.sh
+wasmer-serve:
+	@cd webassembly/scripts && ./run_wasmer.sh
 
-run-browser: wasm-compile wasm-serve
+run-wasmer: wasm-compile wasmer-serve
 
 run-node: 
-	cd webassembly/scripts && ./run_node.sh
+	@cd webassembly/scripts && ./run_node.sh
 
 run-tests:
-	cd webassembly/scripts && ./run_tests.sh
-	
+	@cd webassembly/scripts && ./run_tests.sh
